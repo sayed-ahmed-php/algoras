@@ -668,6 +668,7 @@ p{
 	-webkit-transition: all .35s ease-in-out;
 	-moz-transition: all .35s ease-in-out;
 	-o-transition: all .35s ease-in-out;
+	text-align: left;
 }
 .feature .feature-content .feat-icon{
 	text-align: center;
@@ -701,6 +702,11 @@ p{
 	opacity: .75;
 	overflow: hidden;
 }
+
+.feature .center-feature{
+	margin:  0 auto;
+	text-align: justify;
+}
 /*=== End features========*/
 .modules{
 	position: relative;
@@ -712,7 +718,7 @@ p{
 .modules .product-block{
 	text-align: center;
 	width: 95%;
-	height: 380px;
+	height: 400px;
 	margin: 0 auto;
 	margin-bottom: 25px;
 	border: 1px solid transparent;
@@ -753,7 +759,7 @@ p{
 	
 }
 .modules .product-details .pro-det-head{
-	text-align: left;
+	/*text-align: left;*/
 }
 .modules .product-details .heading{
 	font-size: 1.375rem;
@@ -839,7 +845,7 @@ p{
 	background-position: center;
 	padding-top: 50px;
 	margin-top: 25px;
-	height: 250px;
+	height: 280px;
 	max-height: 350px;
 }
 .testimonial .container{
