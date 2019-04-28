@@ -1,4 +1,35 @@
 @media (max-width: 370px) {
+	/*=General=*/
+	.custm-btn{
+		font-size: 13px;
+	}
+	.social.side-social li{
+		width: 35px;
+		height: 35px;
+		line-height: 50px;
+	}
+	.social li i{
+		font-size: 25px;
+	}
+	@keyframes top-botton {
+    0%,
+    {
+        width: 40px;
+    }
+    100%{
+        width: 40px
+    }
+	}
+	.heading{
+		font-size: 1.3rem;
+		font-weight: 700;
+	}
+	.heading::after{
+		bottom: -10px;
+		height: 3px;
+	}
+	/*=End General=*/
+	
 	/*==index==*/
 	.feature .feature-content .feat{
 		width: 80%;
@@ -18,11 +49,153 @@
 		font-weight:700;
 	}
 	/*End Feature section*/
+	.modules .product-block{
+		width: 85%;
+		margin: 0 auto 25px;
+		height: 350px;
+		padding: 5px 15px;
+	}
+	.modules .product-details p,
+	.feature .feature-content p{
+		height: auto;
+		font-size: .9rem;
+	}
+	.modules .product-block .product-img{
+		width: 50px;
+		height: 50px;
+	}
+	.modules .product-block .custm-btn,
+	.download .custm-btn{
+		margin-left: 0;
+	}
+	/*End moduls*/
+	.testimonial{
+		padding-top: 20px;
+	}
+	.testimonial .carousel-inner{
+		width: 100%;
+	}
+	.testimonial .carousel-indicators{
+		bottom: 0;
+	}
+	.testimonial p{
+		font-size: .9rem;
+	}
+	.testimonial p span{
+		width: 14px;
+		height: 14px;
+	}
+	/*End Testimonials*/
+	.feature .feature-content{
+		margin-top: 30px;
+	}
+	.choose-us-body .choose-img{
+		width: 70%;
+		height: 230px;
+		margin: auto;
+		margin-bottom: 35px;
+	}
+	.choose-us-body .choose-img img{
+		width: 110px!important;
+	}
+	.choose-us-body .accordion{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.choose-us .card-body{
+		font-size: 14px;
+	}
+	.choose-us .card-header h2 button{
+		font-size: 14px;
+		white-space: normal;
+	}
+	.choose-us .card-header img{
+		width: 12px;
+	}
+	/*End why-choose-us*/
+	.peak .peak-head p{
+		font-size: .9rem;	
+	}
+	.peak .peak-ul{
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.peak .peak-ul li img{
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 8px;
+		width: 30px;
+		height: 30px;
+	}
+	.peak .peak-ul li span{
+		font-size: .8rem;
+	}
+	.peak .peak-ul li{
+		font-size: .9rem;
+	}
+	.peak .peak-img{
+		float: none;
+		margin: 0 auto;
+		width: 50%;
+	}
+	.peak .peak-img img{
+		margin: 0 auto;
+	}
+	/*End peak*/
+	.our-customer .our-cust-content .cust-block .cust-img{
+		width: 110px;
+		height: 110px;
+	}
+	/*End our-customer*/
+	.download p{
+		font-size: .9rem;
+		margin-bottom: 15px;
+	}
+	.download .custm-btn{
+		padding: 5px 25px;
+	}
+	/*End download*/
 	/*==End index==*/
+	/*Start footer*/
+	footer .footer-content .about-us .logo img{
+		width: 125px;
+	}
+	footer p{
+		font-size: .9rem;
+		margin: 18px 0;
+	}
+	footer .footer-contact .custm-btn{
+		margin-bottom: 10px;
+	}
+	footer .social li a{
+		width: 30px;
+		height: auto;
+	}
+	footer .social{
+		padding: 0;
+	}
+	footer .about-us h4{
+		font-size: 1.1rem;
+	}
+	footer .copy-rights{
+		font-size: .9rem
+	}
+	/*End footer*/
 }
 /*End media 
 =========================*/
 @media (min-width: 371px) and (max-width: 575px) {
+	/*=General=*/
+	.heading{
+		font-size: 1.5rem;
+	}
+	.heading::after{
+		bottom: -10px;
+		height: 3px;
+	}
+	/*=End General=*/
 	/*==index==*/
 	.feature .feature-content .feat{
 		width: 75%;
@@ -42,26 +215,162 @@
 	}
 	/*End Feature section*/
 	.modules .product-block{
-		width: 75%;
+		width: 67%;
 		margin: 0 auto 25px;
-		height: 320px;
+		height: 350px;
 		padding: 5px 15px;
 	}
 	.modules .product-details p,
 	.feature .feature-content p{
-		height: 90px;
-		font-size: .95rem
+		height: auto;
+		font-size: .95rem;
 	}
 	.modules .product-block .product-img{
 		width: 60px;
 		height: 60px;
 	}
 	/*End moduls*/
+	.testimonial{
+		padding-top: 15px;
+		height: 210px;
+	}
+	.testimonial .carousel-inner{
+		width: 100%;
+		display: flex;
+		align-content: center;
+		align-items: center;
+	}
+	.testimonial .carousel-indicators{
+		bottom: 0px;
+	}
+	.testimonial p{
+		font-size: 1rem;
+	}
+	.testimonial p span{
+		width: 16px;
+		height: 16px;
+	}
+	/*End Testimonials*/
+	.feature .feature-content{
+		margin-top: 30px;
+	}
+	.choose-us-body .choose-img{
+		width: 70%;
+		height: 280px;
+		margin: auto;
+		margin-bottom: 35px;
+	}
+	.choose-us-body .choose-img img{
+		width: 150px!important;
+	}
+	.choose-us-body .accordion{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.choose-us .card-body{
+		font-size: 14px;
+	}
+	.choose-us .card-header h2 button{
+		font-size: 15px;
+	}
+	.choose-us .card-header img{
+		width: 14px;
+	}
+	/*End why-choose-us*/
+		.peak .peak-head p{
+		font-size: 1rem;	
+	}
+	.peak .peak-ul{
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.peak .peak-ul li img{
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 8px;
+		width: 40px;
+		height: 40px;
+	}
+	.peak .peak-ul li{
+		font-size: .9rem;
+	}
+	.peak .peak-ul li span{
+		font-size: .9rem;
+	}
+	.peak .peak-img{
+		float: none;
+		margin: 0 auto;
+		width: 50%;
+		
+	}
+	.peak .peak-img img{
+		margin: 0 auto;
+	}
+	/*End peak*/
+	.our-customer .our-cust-content .cust-block .cust-img{
+		width: 110px;
+		height: 110px;
+	}
+	/*End our-customer*/
+	.download p{
+		font-size: 1rem;
+	}
+	/*End download*/
 	/*==End index==*/
-}
+	/*Start footer*/
+	footer .footer-content .about-us .logo img{
+		width: 125px;
+	}
+	footer p{
+		font-size: .9rem;
+		margin: 18px 0;
+	}
+	footer .footer-contact .custm-btn{
+		margin-bottom: 10px;
+	}
+	footer .social li a{
+		width: 30px;
+		height: auto;
+		margin-left: 5px;
+	}
+	footer .social{
+		padding: 0;
+	}
+	footer .about-us h4{
+		font-size: 1.1rem;
+	}
+	footer .copy-rights{
+		font-size: .9rem
+	}
+	.social.side-social li{
+		width: 40px;
+		height: 40px;
+		line-height: 52px;
+	}
+	.social li i{
+		font-size: 28px;
+	}
+	@keyframes top-botton {
+    0%,
+    {
+        width: 48px;
+    }
+    100%{
+        width: 48px
+    }
+	}
+	/*End footer*/
+	}
 /*End media 
 =========================*/
 @media (min-width: 576px) and (max-width: 767px) {
+	/*=General=*/
+	.heading{
+		font-size: 1.6rem;
+	}
+	/*=End General=*/
 	/*==index==*/
 	.feature .feature-content .feat{width: 100%!important;}
 	.feature .feature-content .feat-icon{
@@ -95,11 +404,82 @@
 		height: 60px;
 	}
 	/*End moduls*/
+	/*Start Testimonials*/
+	.testimonial .carousel-indicators{
+		bottom: 0;
+	}
+	.testimonial p{
+		font-size: 1.1rem;
+	}
+	.testimonial p span{
+		width: 20px;
+		height: 20px;
+	}
+	/*End Testimonials*/
+	.choose-us-body{
+		padding: 0;
+	}
+	.choose-us-body .choose-img{
+		width: 75%;
+		height: 250px;
+		margin: auto;
+		margin-bottom: 35px;
+	}
+	.choose-us-body .choose-img img{
+		width: 130px!important;
+	}
+	.choose-us-body .accordion{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.choose-us .card-body{
+		font-size: .9rem;
+	}
+	/*End why-choose-us*/
+	.peak .peak-head p{
+		font-size: 1.1rem;	
+	}
+	.peak .peak-ul{
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.peak .peak-ul li{
+		font-size: .9rem;
+	}
+
+	.peak .peak-ul li img{
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+	.peak .peak-img{
+		float: none;
+		margin: 0 auto;
+		width: 60%;
+	}
+	.peak .peak-img img{
+		margin:0 auto;
+	}
+	/*End peak*/
+	.download p{
+		font-size: 1.1rem;
+	}
+	.download p q{
+		font-size: 1.07rem;
+	}
+	/*End download*/
 	/*==End index==*/
 }
 /*End media 
 =========================*/
 @media (min-width: 768px) and (max-width: 991px) {
+	/*=General=*/
+	.heading{
+		font-size: 1.8rem;
+	}
+	/*=End General=*/
 	/*==index==*/
 	.feature .feature-content .feat{width: 100%!important;}
 	.feature .feature-content  .sm-heading{
@@ -126,7 +506,38 @@
 		font-weight:700;
 	}
 	/*End moduls*/
+	/*Start Testimonials*/
+	.testimonial{
+		padding-top: 20px;
+	}
+	.testimonial .carousel-indicators{
+		bottom: 0;
+	}
+	/*End Testimonials*/
+	.choose-us-body .choose-img{
+		width: 100%;
+		height: 280px;
+		margin: auto;
+	}
+	.choose-us-body .choose-img img{
+		width: 150px!important;
+	}
+	/*End why-choose-us*/
+	.peak .peak-ul li{
+		font-size: .9rem;
+	}
+	/*End peak*/
 	/*==End index==*/
+	/*=Start footer=*/
+	footer .footer-contact .custm-btn{
+		margin-bottom: 10px;
+		
+	}
+	footer .social{
+		padding: 0;
+	}
+
+	/*=Enf footer=*/
 }
 /*End media 
 =========================*/

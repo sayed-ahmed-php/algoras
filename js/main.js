@@ -12,14 +12,8 @@ $(document).ready(function () {
         var a = getCurrentScroll();
         if (a >= b) {
             $('.header').addClass('scrolled');
-//			$('.index .navbar-brand .colored-log').css({opacity : 1});
-//			$('.index .navbar-brand .white-logo').css({opacity : 0});
-
         } else {
             $('.header').removeClass('scrolled');
-//			$('.index .navbar-brand .colored-log').css({opacity : 0});
-//			$('.index .navbar-brand .white-logo').css({opacity : 1});
-
         }
     });
 	$(window).scroll(function () {
@@ -52,40 +46,21 @@ $(document).ready(function () {
 		$(this).siblings(".listed-menu").find('.dropdown-list').slideUp();
     });
 	
-	/*partners*/
-	
-	$(".partners .accordion #headingOne").on('click', function () {
-		$(".seperator.septone").toggleClass("toggle");
-		$(".seperator.septtwo").removeClass("toggle");
-		$(".seperator.septthree").removeClass("toggle");
-		$(".seperator.septfour").removeClass("toggle");
+	/*industries dictionary tabs*/
+	// Deal With Tabs
+    
+    $('.tab-switch li').on('click', function () {
+       // Add Selected Class To Active Link
+        
+        $(this).addClass('selected').siblings().removeClass();
+        
+        // Hide All Div
+        $('.extend-tabs .extend-tabs-content > div').hide();
+        
+        //Show Div That is  Connected with selected tab
+        $('.' + $(this).data('class')).show();
+        
     });
-	$(".partners .accordion #headingTwo").on('click', function () {
-		$(".seperator.septtwo").toggleClass("toggle");
-		$(".seperator.septone").removeClass("toggle");
-		$(".seperator.septthree").removeClass("toggle");
-		$(".seperator.septfour").removeClass("toggle");
-		
-    });
-	$(".partners .accordion #headingThree").on('click', function () {
-		$(".seperator.septthree").toggleClass("toggle");
-		$(".seperator.septone").removeClass("toggle");
-		$(".seperator.septtwo").removeClass("toggle");
-		$(".seperator.septfour").removeClass("toggle");
-    });
-	$(".partners .accordion #headingFour").on('click', function () {
-		$(".seperator.septfour").toggleClass("toggle");
-		$(".seperator.septone").removeClass("toggle");
-		$(".seperator.septtwo").removeClass("toggle");
-		$(".seperator.septthree").removeClass("toggle");
-    });
-	
-	$(".partners .accordion .card-header.noseperat").on('click', function () {
-		$(".seperator.septfour").removeClass("toggle");
-		$(".seperator.septone").removeClass("toggle");
-		$(".seperator.septtwo").removeClass("toggle");
-		$(".seperator.septthree").removeClass("toggle");
-	});
 });
 /* owl carousel
 ==========================*/
