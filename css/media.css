@@ -3,6 +3,7 @@
 	.custm-btn{
 		font-size: 13px;
 	}
+	
 	.social.side-social li{
 		width: 35px;
 		height: 35px;
@@ -58,7 +59,6 @@
 	.modules .product-details p,
 	.feature .feature-content p{
 		height: auto;
-		font-size: .9rem;
 	}
 	.modules .product-block .product-img{
 		width: 50px;
@@ -69,22 +69,6 @@
 		margin-left: 0;
 	}
 	/*End moduls*/
-	.testimonial{
-		padding-top: 20px;
-	}
-	.testimonial .carousel-inner{
-		width: 100%;
-	}
-	.testimonial .carousel-indicators{
-		bottom: 0;
-	}
-	.testimonial p{
-		font-size: .9rem;
-	}
-	.testimonial p span{
-		width: 14px;
-		height: 14px;
-	}
 	/*End Testimonials*/
 	.feature .feature-content{
 		margin-top: 30px;
@@ -113,9 +97,6 @@
 		width: 12px;
 	}
 	/*End why-choose-us*/
-	.peak .peak-head p{
-		font-size: .9rem;	
-	}
 	.peak .peak-ul{
 		float: none;
 		text-align: center;
@@ -132,9 +113,6 @@
 	.peak .peak-ul li span{
 		font-size: .8rem;
 	}
-	.peak .peak-ul li{
-		font-size: .9rem;
-	}
 	.peak .peak-img{
 		float: none;
 		margin: 0 auto;
@@ -150,7 +128,6 @@
 	}
 	/*End our-customer*/
 	.download p{
-		font-size: .9rem;
 		margin-bottom: 15px;
 	}
 	.download .custm-btn{
@@ -163,7 +140,6 @@
 		width: 125px;
 	}
 	footer p{
-		font-size: .9rem;
 		margin: 18px 0;
 	}
 	footer .footer-contact .custm-btn{
@@ -176,16 +152,117 @@
 	footer .social{
 		padding: 0;
 	}
-	footer .about-us h4{
-		font-size: 1.1rem;
-	}
-	footer .copy-rights{
-		font-size: .9rem
-	}
 	/*End footer*/
+	/*&&&& End resources 2 page &&&&*/
+	.resources2 .product-overview{
+		padding:50px 0 25px;
+	}
+	.resources2 .resources2-content .tab-pane-content > img{
+		display: block;
+		width: 90%;
+		float: none;
+		margin: 10px auto 15px;
+	}
+	.resources2 .resources2-content .tab-pane-content > img + p{
+		width: 100%;
+		padding: 0;
+	}
+	.resources2 .nav-pills > .nav-link{
+		width: 70%;
+		margin: 0 auto 10px;
+	}
+	/*&&&& End resources 2 page &&&&*/
 }
 /*End media 
 =========================*/
+@media (max-width: 575px) {
+	.side-social{
+		display: none;
+	}
+	.resources2 .product-overview{
+		padding: 0;
+	}
+
+	.large-pad{
+		padding: 30px!important;
+	}
+	.page-notify .notify-butn .custm-btn{
+		margin: 20px 0 0px;
+		width: 60%;
+	}
+	/*page panner*/
+	.page-pannar .pannar-content .page-img{
+		display: none;
+	}
+	.finance .our-product .our-product-details .prod-det{
+		width: 90%;
+		margin: 0 auto 15px;
+	}
+		
+	/*&&&&& Start Finance page &&&&*/
+	.finance .finance-feature .finance-feat .finance-feat-img{
+		display: none;
+	}
+	.finance .finance-feature .finance-feat-icon{
+		width: 40px!important;
+	}
+	/*&&&&& End Finance page &&&&*/
+
+	.page-pannar .pannar-content .page-title{
+		margin-left: 0;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.page-pannar .pannar-content .page-title .title{
+		font-size: 1.2rem;
+		margin: 10px 0;
+	}
+	.page-pannar .pannar-content .page-title p{
+		font-size: 1rem;
+		width: 100%;
+	}
+	/*End page panner*/
+	.modules .product-details p,
+	.feature .feature-content p,
+	.peak .peak-head p,
+	.peak .peak-ul li,
+	.download p,
+	footer p,
+	footer .copy-rights,
+	.page-notify q, 
+	.page-notify p,
+	.finance .product-overview p, 
+	.resources2 .product-overview p,
+	.page-notify .notify-butn .custm-btn,
+	.resources .resources-content .tab-content p,
+	.resources2 .resources2-content p{
+		font-size: .9rem;
+	}
+	.resources .resources-content .nav-tabs .nav-link{
+		margin-right: 10px!important;
+		margin-bottom: 10px!important;
+		font-size: 1rem;
+	}
+	.resources .nav-tabs .nav-item.show .nav-link, .resources .nav-tabs .nav-link.active{
+		border-bottom-width: 5px!important;
+	}
+	.resources .resources-content .nav-tabs{
+		border: none!important;
+	}
+	footer .about-us h4,
+	.finance .heading, .resources2 .heading,
+	.indus-product .product-head .heading{
+		font-size: 1.1rem;
+	}
+	/**& Start Resources 1 page**/
+	.resources .nav-tabs .nav-item.show .nav-link ::after, 
+	.resources .nav-tabs .nav-link.active::after{
+		bottom: -20px;
+	}
+	/**& End Resources 1 page**/
+	}
+}
 @media (min-width: 371px) and (max-width: 575px) {
 	/*=General=*/
 	.heading{
@@ -194,6 +271,9 @@
 	.heading::after{
 		bottom: -10px;
 		height: 3px;
+	}
+	.page-pannar .pannar-content{
+		top: 170px!important;
 	}
 	/*=End General=*/
 	/*==index==*/
@@ -230,26 +310,6 @@
 		height: 60px;
 	}
 	/*End moduls*/
-	.testimonial{
-		padding-top: 15px;
-		height: 210px;
-	}
-	.testimonial .carousel-inner{
-		width: 100%;
-		display: flex;
-		align-content: center;
-		align-items: center;
-	}
-	.testimonial .carousel-indicators{
-		bottom: 0px;
-	}
-	.testimonial p{
-		font-size: 1rem;
-	}
-	.testimonial p span{
-		width: 16px;
-		height: 16px;
-	}
 	/*End Testimonials*/
 	.feature .feature-content{
 		margin-top: 30px;
@@ -362,14 +422,67 @@
     }
 	}
 	/*End footer*/
+	
+	/*&&&& Start resources 2 page &&&&*/
+	.resources2 .flex-column{
+		flex-wrap: wrap;
+		flex-direction: row!important;
+	}
+	.resources2 .nav-pills > .nav-link{
+		display: inline-block;
+		width: 40%;
+		font-size: .9rem;
+		margin: 10px auto;
+	}
+	.resources2 .resources2-content .tab-pane-content > img{
+		display: block;
+		width: 75%;
+		float: none;
+		margin: 10px auto 15px;
+	}
+	.resources2 .resources2-content .tab-pane-content > img + p{
+		width: 100%;
+		padding: 0;
+	}
+	/*&&&& End resources 2 page &&&&*/
+	/*&&&& End resources 1 page &&&&*/
+	.resources .resources-content .nav-tabs .nav-item{
+		font-size: 1rem;
+	}
+	/*&&&& End resources 1 page &&&&*/
+	
 	}
 /*End media 
 =========================*/
+
+@media (max-width: 767px) {
+	.page-pannar {
+		height: 400px;
+	}
+	.page-pannar .pannar-content{
+		top: 150px;
+	}
+
+}
 @media (min-width: 576px) and (max-width: 767px) {
 	/*=General=*/
+	.page-pannar .pannar-content .page-title{		
+		max-width: 420px;
+	}
+	.page-pannar .pannar-content .page-title .title{
+		font-size: 1.5rem;
+		margin-top: 0;
+	}
+	.page-pannar .pannar-content .page-title p{
+		font-size: 1rem;
+	}
 	.heading{
 		font-size: 1.6rem;
 	}
+	.page-notify .notify-butn .custm-btn{
+		width: 90%;
+	}
+	
 	/*=End General=*/
 	/*==index==*/
 	.feature .feature-content .feat{width: 100%!important;}
@@ -405,16 +518,6 @@
 	}
 	/*End moduls*/
 	/*Start Testimonials*/
-	.testimonial .carousel-indicators{
-		bottom: 0;
-	}
-	.testimonial p{
-		font-size: 1.1rem;
-	}
-	.testimonial p span{
-		width: 20px;
-		height: 20px;
-	}
 	/*End Testimonials*/
 	.choose-us-body{
 		padding: 0;
@@ -471,9 +574,218 @@
 	}
 	/*End download*/
 	/*==End index==*/
+	
+	/*&&&&& Resources2 page &&&&*/
+	.resources2 .resources2-content .tab-pane-content > img{
+		display: block;
+		width: 95%;
+		float: none;
+		margin: 10px auto 15px;
+	}
+	.resources2 .resources2-content .tab-pane-content > img + p{
+		width: 100%;
+		padding: 0;
+	}
+	/*&&&&& End Resources2 page &&&&*/
+	
+	
+	/*&&&&& Start Finance page &&&&*/
+	.finance .finance-feature .finance-feat .finance-feat-img{
+		height: 200px!important;
+	}
+	/*&&&&& End Finance page &&&&*/
+
 }
 /*End media 
 =========================*/
+@media (max-width: 991px) {
+	.header{
+		top: -50px;
+		background-color: #fff;
+		border-bottom: 1px solid #eee;
+		-webkit-transition: all .35s ease-in-out;
+		-moz-transition: all .35s ease-in-out;
+		-o-transition: all .35s ease-in-out;
+		transition: all .35s ease-in-out;
+	}
+	.header .top-header .phone{
+		color: rgb(95,110,125);
+	}
+	.header .main-header .navbar-brand{
+		width: 170px;
+		padding: 15px 0;
+		top: 0;
+		-webkit-transition: all .35s ease-in-out;
+		-moz-transition: all .35s ease-in-out;
+		-o-transition: all .35s ease-in-out;
+		transition: all .35s ease-in-out;
+	}
+	.header .main-header .navbar-brand .white-logo{
+		opacity: 0;
+		visibility: hidden;
+		display: none;
+	}
+	.header .main-header .navbar-brand .logo-cap{
+		width: 60px !important;
+		bottom: 3px;
+	}
+	.main-header .navbar-brand .colored-log{
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+	.colored .header .main-header .navbar-brand .logo-cap{
+		bottom: -8px;
+	}
+	.navbar-collapse,
+	.navbar-collapse.show{
+		display: none;
+	}
+	
+	.mobile-side-menu{
+		display: block;
+		position: fixed;
+		top: 72px;
+		bottom: 0;
+		right: -230px;
+		width: 230px;
+		height: calc(100vh - 72px);
+		overflow-y: auto;
+		background-color: #fff;
+		z-index: 100;
+		transition: all .3s ease-in-out;
+	}
+	.mobile-side-menu.show{
+		right: 0;
+	}
+	.mobile-nav{
+		position: relative;
+		height: calc(100vh - 114px);
+		overflow-x: hidden;
+		overflow-y: auto;
+		padding-top: 15px;
+		padding-left: 10px;
+		scrollbar-width: thin;
+		scrollbar-behavior: smooth;
+	}
+	.mobile-nav.overflow{
+		overflow: hidden!important;
+	}
+	.mobile-nav .nav-item{
+		position: relative;
+		-webkit-transition: all .35s ease-in-out;
+		-moz-transition: all .35s ease-in-out;
+		-o-transition: all .35s ease-in-out;
+		transition: all .35s ease-in-out;
+
+	}
+	.mobile-nav .nav-item .nav-link{
+		text-transform: capitalize;
+		color: #18988b;
+		font-weight: bold;
+		-webkit-transition: all .35s ease-in-out;
+		-moz-transition: all .35s ease-in-out;
+		-o-transition: all .35s ease-in-out;
+		transition: all .35s ease-in-out;
+
+	}
+	.mobile-nav .nav-item:hover .nav-link{
+		color: #ff9c4a;
+	}
+
+	.mobile-nav .nav-item .sub-icon{
+		color: #18988b;
+		font-size: 30px;
+		position: absolute;
+		top: -4px;
+		right: 5px;
+		width: 40px;
+		text-align: center;
+		cursor: pointer;
+		border: 1px solid transparent;
+		-webkit-transition: all .35s ease-in-out;
+		-moz-transition: all .35s ease-in-out;
+		-o-transition: all .35s ease-in-out;
+		transition: all .35s ease-in-out;
+	}
+	.mobile-nav .nav-item:hover .sub-icon{
+		color: #ff9c4a;		
+	}
+	.mobile-nav .sub-mobile-nav{
+		position: absolute;
+		right: -230px;
+		top: 0;
+		width: 230px;
+		height: calc(100vh - 72px);
+		z-index: 1;
+		background-color: #fff;
+		transition: all .3s ease-in-out;
+	}
+	.mobile-nav .sub-mobile-nav.show{
+		right: 0;
+	}
+	.mobile-nav .sub-mobile-nav .sub-mobile-nav{
+		top: -44px;
+	}
+	.mobile-nav .sub-mobile-nav .close-btn{
+		background-color: #1a3763;
+		padding: 10px;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 600;
+		cursor: pointer;
+	}
+	.mobile-nav .sub-mobile-nav .close-btn i{
+		font-size: 24px;
+		width: 30px;
+		text-align: center;
+	}
+	
+	.mobile-search{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		border: 3px solid #1a3763;
+	}
+	.mobile-search .form-control{
+		height: 35px;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	.mobile-search .btn-search{
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #333;
+		border: 0;
+		box-shadow: none;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		line-height: 35px;
+		color: #fff;
+	}
+	
+	/*&&&&& Start Finance page &&&&*/
+	.finance .finance-feature .finance-feat-content{
+		padding: 15px!important;
+	}
+	.finance .finance-feature .finance-feat-icon{
+		width: 35px;
+	}
+	.finance .finance-feature .finance-feat-details h5{
+		font-size: 1.1rem;
+	}
+	.finance .finance-feature .finance-feat-details p{
+		line-height: normal;
+		word-spacing: normal;
+		text-align: justify;
+		margin-bottom: 0;
+	}
+	/*&&&&& End Finance page &&&&*/
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	/*=General=*/
 	.heading{
@@ -507,12 +819,6 @@
 	}
 	/*End moduls*/
 	/*Start Testimonials*/
-	.testimonial{
-		padding-top: 20px;
-	}
-	.testimonial .carousel-indicators{
-		bottom: 0;
-	}
 	/*End Testimonials*/
 	.choose-us-body .choose-img{
 		width: 100%;
@@ -526,6 +832,12 @@
 	.peak .peak-ul li{
 		font-size: .9rem;
 	}
+	.peak .peak-ul li img{
+		display: block;
+	}
+	.peak .peak-img{
+		width: 100%;
+	}
 	/*End peak*/
 	/*==End index==*/
 	/*=Start footer=*/
@@ -536,8 +848,20 @@
 	footer .social{
 		padding: 0;
 	}
-
 	/*=Enf footer=*/
+	/*&&&&& Resources2 page &&&&*/
+	.resources2 .resources2-content .tab-pane-content > img{
+		display: block;
+		width: 75%;
+		float: none;
+		margin: 10px auto 15px;
+	}
+	.resources2 .resources2-content .tab-pane-content > img + p{
+		width: 100%;
+		padding: 0;
+	}
+	/*&&&&& End Resources2 page &&&&*/
+	
 }
 /*End media 
 =========================*/

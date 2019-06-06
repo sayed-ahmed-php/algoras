@@ -13,10 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">        
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- Css files
-		===========================-->
-		<!--google fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-		
+		===========================-->		
 		<link rel="stylesheet" href="vendor/bootstrap-4.1.1/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="vendor/animate/animate.css">
@@ -68,7 +65,7 @@
 								  </div>
 							  <!--End-->
 							  </a>
-							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-side-menu" aria-controls="mobile-side-menu" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							  </button>
 
@@ -402,10 +399,11 @@
 										  <!--End-->
 									  </ul>
 									</div>
-									<form class="form-inline">
-									<button class="btn search" type="submit">
+									<form class="form-inline search-form">
+									<button class="btn search" type="button">
 									  <i class="fa fa-search"></i>
 									  </button>
+										<input type="text" class="search-box" placeholder="search.........">
 								  	</form>
 								  </ul>
 								 <!--End --> 
@@ -416,6 +414,80 @@
 				</div>
 				<!--End main-->
 			</header>
+			<div class="mobile-side-menu" id="mobile-side-menu">
+				<ul class="mobile-nav">
+					<li class="nav-item">
+						<a href="#" class="nav-link">modules</a>
+						<span class="sub-icon">
+							<i class="fa fa-angle-right"></i>
+						</span>
+						<ul class="sub-mobile-nav">
+							<li class="close-btn level1">
+								<i class="fa fa-angle-left"></i>
+								<span>back</span>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">modules</a>
+								<span class="sub-icon">
+									<i class="fa fa-angle-right"></i>
+								</span>
+								<ul class="sub-mobile-nav">
+									<li class="close-btn">
+										<i class="fa fa-angle-left"></i>
+										<span>back</span>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">modules</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">modules</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">modules</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">modules</a>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">modules</a>
+									</li>
+								</ul><!--End Sub-mobile-nav-->
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">modules</a>
+								
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">modules</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">modules</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">modules</a>
+							</li>
+						</ul><!--End Sub-mobile-nav-->
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">modules</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">modules</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">modules</a>
+					</li>
+				</ul><!--End mobile-nav-->
+				<div class="mobile-search">
+					<form class="search-form">
+						<input class="form-control" type="search" placeholder="search">
+						<button class="btn-search" type="submit">
+							<i class="fa fa-search"></i>
+						</button>
+					</form>
+				</div>
+			</div><!--End mobile-side-navbar-->
+			
 		<!-- End Header
 		===========================-->
 
@@ -426,17 +498,17 @@
 				<section class="home-slider">
 					<div class="container">
 						<div class="slider-caption">
-							<h1>Born on the Cloud</h1>
-							<p>New Digital  transformation Platform<br>
-								<span> for Enterprise System </span>
-								<br>
+							<q>Born on the Cloud</q>
+							<p>New Digital  transformation Platform for<br>Enterprise System
 								<!-- <span>supply chain</span> -->
 							</p>
+							<h1><q><span class="cap">algoras<sup>&copy;</sup></span> expands cloud <span class="cap">erp</span> capapilities,<br> takes global perspective.</q></h1>
+							<p>fully integrated <span class="cap">erp</span> system that provides you with control over your<br> businesses performance and insight into whereyou are goning next.</p>
+							<small>organization of all sizes can use<span class="cap"> algoras</span></small>
 						</div>
 					</div>
 				</section>
 				<!----End Home Slider->
-				
 				<!-- Start features-->
 				<section class="feature section-pad">
 					<div class="container">
@@ -525,7 +597,7 @@
 				===========================-->
 				<section class="modules section-pad">
 					<div class="container">
-						<div class="product-head text-center wow bounceIn " data-wow-offset="180">
+						<div class="product-head text-center wow bounceIn " data-wow-offset="130">
 							<h2 class="heading">modules</h2>
 						</div>
 						<div class="product-content">
@@ -537,7 +609,7 @@
 										<!--End product -img-->
 										<div class="product-details">
 											<div class="pro-det-head">
-												<h3 class="heading">Finance &amp; Accounting</h3>
+												<h3>Finance &amp; Accounting</h3>
 											</div>
 											<!--End product-details-->
 											<p>
@@ -558,7 +630,7 @@
 									<!--End product -img-->
 									<div class="product-details">
 										<div class="pro-det-head">
-											<h3 class="heading">Supplay Chain Managment</h3>
+											<h3>Supplay Chain Managment</h3>
 										</div>
 										<!--End product-details-->
 											<p>
@@ -579,7 +651,7 @@
 									<!--End product -img-->
 									<div class="product-details">
 										<div class="pro-det-head">
-											<h3 class="heading">HCM</h3>
+											<h3>human capital managment</h3>
 										</div>
 										<!--End product-details-->
 										<p>
@@ -601,7 +673,7 @@
 									
 									<div class="product-details">
 										<div class="pro-det-head">
-											<h3 class="heading">CRM</h3>
+											<h3>customer relationship managment</h3>
 										</div>
 										<!--End product-details-->
 										<p>
@@ -632,31 +704,24 @@
 						  <ol class="carousel-indicators">
 							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-							<!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>   -->
 						  </ol>
 						  <div class="carousel-inner">
 							<div class="carousel-item active">
-								<p class="lead">
-								<span>
-									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								 	viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-									<g>
-									<g id="right_x5F_quote">
-									<g>
-									<path style="fill:#ff6b00;" d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"/>
-									<path style="fill:#ff6b00;" d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"/>
-									</g>
-									</g>
-									</g>
-									</svg>
-									</span>
-									We needed a solution that would merge all departments from Finance to HCM and which would integrate with Inventory,
-									Sales, Purchase, and Warehouse etc. The key was availability of information at the right time and the right place 
-									and with ALGORAS Cloud ERP solution in place; we are happy and believe all future requirements will be met with ALGORAS
-									Cloud ERP. I would not hesitate to recommend ALGORAS Cloud ERP to any clients, as I know they will receive a world-class
-									service.
-									
+								<p>
+									<span>
+										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+										<g>
+										<g id="right_x5F_quote">
+										<g>
+										<path style="fill:#ff6b00;" d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"/>
+										<path style="fill:#ff6b00;" d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"/>
+										</g>
+										</g>
+										</g>
+										</svg>
+										</span>
+									...ramco is confident of growing its market presence substantially. the demand for full-suit cloud  ERP software from mid-market companies continues to flow, with mature markets such as north and south american and austrailia registering their first deals.
 									<span>
 										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
@@ -670,12 +735,21 @@
 									</g>
 									</svg>
 									</span>
-									
 								</p>
-								<span style="color: white">
-									Hamoud Al Ashram ,<span style="color: #ffb27b"> Chief Financial Officer and Managing</span>
+								<div class="author-details">
+								<span class="author-name">
+									Hamoud Al Ashram ,
 								</span>
-							</div>
+								<span class="author-position">
+									Chief Financial Officer and Managing ,
+								</span>
+									
+								<span class="author-company">
+									company name
+								</span>	
+								</div>
+								<!--End person details-->
+							  </div>
 							<div class="carousel-item">
 							  <p class="lead">
 								<span>
@@ -691,9 +765,8 @@
 									</g>
 									</svg>
 									</span>
-										I was pleased to find ALGORAS as an ERP solution that offers excellent value, as well as the specific functionality that our business 
-										requires. ALGORAS and our team at OTC did a fantastic job of working together to complete this project.
-								  	<span>
+								  ...ramco is confident of growing its market presence substantially. the demand for full-suit cloud  ERP software from mid-market companies continues to flow, with mature markets such as north and south american and austrailia registering their first deals.
+								<span>
 								  		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
 									<g>
@@ -707,75 +780,20 @@
 									</svg>
 								  	</span>		  
 								</p>
-								<span style="color: white">
-									Salah MalaK,<span style="color: #ffb27b"> OTC  Chief Executive Officer,CEO</span>
+								<div class="author-details">
+								<span class="author-name" >
+									Hamoud Al Ashram ,
 								</span>
-							</div>
-<!-- 							<div class="carousel-item">
-								<p class="lead">							<span>
-									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-									 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-									<g>
-									<g id="right_x5F_quote">
-									<g>
-									<path style="fill:#ff6b00;" d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"/>
-									<path style="fill:#ff6b00;" d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"/>
-									</g>
-									</g>
-									</g>
-									</svg>
-									</span>
-									This text is experimental and should be replaced by a real text that describes this part of the site It must not exceed the length of this text to ensure a continued fit.
-									This text is experimental and should be replaced by a real text that describes this part of the site It must not exceed the length of this text to ensure a continued fit.
-									<span>
-										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-										<g>
-											<g id="right_x5F_quote">
-												<g>
-													<path style="fill:#ff6b00;" d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"/>
-													<path style="fill:#ff6b00;" d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"/>
-												</g>
-											</g>
-										</g>
-										</svg>
-									</span>
-								</p>
-							</div>
-							  <div class="carousel-item">
-								<p class="lead">
-									<span>
-										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-										<g>
-											<g id="right_x5F_quote">
-												<g>
-													<path style="fill:#ff6b00;" d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"/>
-													<path style="fill:#ff6b00;" d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"/>
-												</g>
-											</g>
-										</g>
-										</svg>
-									</span>
-									This text is experimental and should be replaced by a real text that describes this part of the site It must not exceed the length of this text to ensure a continued fit.
-									This text is experimental and should be replaced by a real text that describes this part of the site It must not exceed the length of this text to ensure a continued fit.
+								<span class="author-position">
+									Chief Financial Officer and Managing ,
+								</span>
 									
-									<span>
-										<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-										<g>
-											<g id="right_x5F_quote">
-												<g>
-													<path style="fill:#ff6b00;" d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"/>
-													<path style="fill:#ff6b00;" d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"/>
-												</g>
-											</g>
-										</g>
-										</svg>
-									</span>
-									
-								</p>
-							</div> -->
+								<span class="author-company">
+									company name
+								</span>	
+								</div>
+								<!--End person details-->
+							</div>
 						  </div>
 						</div>
 					</div>
@@ -794,15 +812,15 @@
 						<!--End choose-us-head-->
 						<div class="choose-us-body">
 							<div class="row">
-								<div class="col-md align-self-center">
-									<div class="choose-img wow fadeInLeft" data-wow-offset="300">
+								<div class="col-lg col-md-5 align-self-center wow fadeInLeft" data-wow-offset="300">
+									<div class="choose-img">
 										<img src="imgs/logo1.png" alt="choose-us" class="image-responsive"
 									    width="200px">
 									</div>
 								</div>
 								<!--End col-sm-->
-								<div class="col-md">
-									<div class="accordion wow fadeInRight" id="accordionExample" data-wow-offset="300">
+								<div class="col-lg col-md-7 wow fadeInRight"  data-wow-offset="300">
+									<div class="accordion" id="accordionExample">
 									  <div class="card">
 										<div class="card-header" id="headingOne">
 										  <h2 class="mb-0">
@@ -916,13 +934,13 @@
 				<section class="peak section-pad">
 					<div class="container">
 						<div class="peak-head text-center">
-							<h2 class="heading mb-4 wow zoomIn" data-wow-offset="200">a peak into <span class="cap">algoras Erp</span> </h2>
+							<h2 class="heading mb-4 wow zoomIn" data-wow-offset="130">a peak into <span class="cap">algoras Erp</span> </h2>
 							<p class="lead wow bounceInUp" data-wow-offset="200" data-wow-duration="1.5s">Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.Outstanding job and exceeded all expectations.Outstanding job and exceeded all expectations. Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.Outstanding job and exceeded all expectations.</p>
 						</div>
 						<!--End peak head-->
 						<div class="peak-content">
 							<div class="row">
-								<div class="col-md-8 align-self-center">
+								<div class="col-md-8">
 									<ul class="peak-ul wow bounceInLeft" data-wow-offset="200" data-wow-duration="1s">
 										<li>
 											<img src="imgs/peak/peak5.png">
@@ -960,7 +978,7 @@
 									<!--End peak-ul-->
 								</div>
 								<!--End col-md-6-->
-								<div class="col-md-4 overlay">
+								<div class="col-md-4 overlay align-self-center">
 									<div class="peak-img wow bounceInRight" data-wow-offset="200" data-wow-duration="1s">
 										<img src="imgs/peak.png">
 									</div>
@@ -992,7 +1010,7 @@
 									</div>
 									<!--End cust-img-->
 									<div class="custm-details">
-											Baan for Technology & Trade International
+											Baan for Technology &amp; Trade International
 									</div>
 									<!--End custm-details-->
 								</div>
@@ -1003,7 +1021,7 @@
 									</div>
 									<!--End cust-img-->
 									<div class="custm-details">
-										Eduleta for development & change
+										Eduleta for development &amp; change
 									</div>
 									<!--End custm-details-->
 								</div>

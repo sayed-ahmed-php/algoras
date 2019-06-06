@@ -45,7 +45,6 @@ $(document).ready(function () {
 		$(this).find('.dropdown-list').slideToggle();
 		$(this).siblings(".listed-menu").find('.dropdown-list').slideUp();
     });
-	
 	/*industries dictionary tabs*/
 	// Deal With Tabs
     
@@ -134,3 +133,29 @@ $(document).ready(function () {
     new WOW().init();
     
 });
+
+/* mobile menu
+============================*/
+$(document).ready(function () {
+    "use strict";
+	$(".sub-icon").on('click', function () {
+		$(this).next(".sub-mobile-nav").addClass('show');
+		$(this).parentsUntil('mobile-nav').addClass('overflow');
+	});
+	$(".close-btn").on('click', function () {
+		
+		if($(this).hasClass("level1")){
+			$(this).parentsUntil('mobile-nav').removeClass('overflow');
+			$(this).parent(".sub-mobile-nav").removeClass('show');
+		} else{
+			$(this).parent(".sub-mobile-nav").removeClass('show');
+		}
+	});
+	$(".header .form-inline .btn.search").on('click', function () {
+		$(".header .form-inline.search-form .search-box").toggleClass("toggle");
+	});
+});
+				  
+				  
+				  
+				  
